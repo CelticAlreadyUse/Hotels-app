@@ -3,17 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.10",
+    "@phosphor-icons/react": "^2.1.4",
+    "@reduxjs/toolkit": "^2.1.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/country-list": "^2.1.4",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.75",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
+    "@types/uuid": "^9.0.8",
+    "axios": "^1.6.7",
+    "firebase": "^10.8.0",
+    "flowbite-react": "^0.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-ratings-declarative": "^3.4.1",
+    "react-redux": "^9.1.0",
+    "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
+    "react-star-ratings": "^2.3.0",
     "typescript": "^4.9.5",
+    "uuid": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -39,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
   }
 }

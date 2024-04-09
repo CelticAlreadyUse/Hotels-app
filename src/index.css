@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 body {
   margin: 0;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +15,66 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.fonts{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes upsAnimation {
+  from{
+    transform: translateY(-200px);
+    -webkit-transform: translateY(-200px);
+    -moz-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    -o-transform: translateY(-200px);
+}to{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+}
+.up{
+  animation: upsAnimation 400ms;
+  transition: all ease-in 2s  upsAnimation ;
+  -webkit-transition: all ease-in 2s  upsAnimation ;
+  -moz-transition: all ease-in 2s  upsAnimation ;
+  -ms-transition: all ease-in 2s  upsAnimation ;
+  -o-transition: all ease-in 2s  upsAnimation ;
+  -webkit-animation: upsAnimation 400ms;
+}
+@keyframes left {
+  from{
+    transform:translateX(-200px);
+    -webkit-transform:translateX(-200px);
+    -moz-transform:translateX(-200px);
+    -ms-transform:translateX(-200px);
+    -o-transform:translateX(-200px);
+}to{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+}
+.Lefts{
+  animation: left 400ms;
+  transition: all ease-in 2s  left ;
+  -webkit-transition: all ease-in 2s  left ;
+  -moz-transition: all ease-in 2s  left ;
+  -ms-transition: all ease-in 2s  left ;
+  -o-transition: all ease-in 2s  left ;
+  -webkit-animation: left 400ms;
+}
+.titleHover{
+  transition: 0.1s ease-in ;
+  -webkit-transition: 0.1s ease-in ;
+  -moz-transition: 0.1s ease-in ;
+  -ms-transition: 0.1s ease-in ;
+  -o-transition: 0.1s ease-in ;
+}
+.titleHover:hover{
+  scale: 120%;
 }
