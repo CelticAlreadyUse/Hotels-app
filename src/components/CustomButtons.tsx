@@ -5,9 +5,7 @@ type CustomButtonsProps ={
     customStyle?:string,
     links?:string
 }
-const CustomButtons = ({title,customStyle,links}:CustomButtonsProps) => {
-
-    
+const CustomButtons = ({title,customStyle,links}:CustomButtonsProps) => {    
   return (
     <>
     <button 

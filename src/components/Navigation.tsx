@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import Searchbar from './Searchbar'
 import { List } from '@phosphor-icons/react'
 import { Sidebar } from 'flowbite-react'
+import { Link } from 'react-router-dom'
 
 const Navigation = () => {
   const [isOpen,setIsopen] = useState<boolean>(false)
   return (
     <>
     <div className='flex fixed top-0 right-0 z-20 up text-white items-center justify-between px-3 py-4 bg-blue-700 w-full'>
-      <h1 className='mr-3  titleHover up font-semibold font-sans text-2xl fonts'>Logo</h1>
+      <Link to='/' className='mr-3 titleHover up font-semibold font-sans text-2xl fonts'>Logo</Link>
     <div className=' lg:flex md:scale-75 hidden up'>
       <Searchbar style={'mr-5'}/>
       <div >
@@ -30,7 +31,7 @@ const Navigation = () => {
   <Sidebar  className={`${isOpen !=false ?  'block bg-blue-800': 'hidden' } -z-10 bg-blue-800 w-full md:hidden up  lg:hidden`} >
       <Sidebar.Items >
         <Sidebar.ItemGroup>
-          <Sidebar.Item  href="#">
+          <Sidebar.Item   href="#">
             Dashboard
           </Sidebar.Item>
           <Sidebar.Item href="#">

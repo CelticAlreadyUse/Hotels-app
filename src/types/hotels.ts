@@ -1,17 +1,14 @@
 export interface NewHotelsTypes{
-    title?:string;
     description?:string;
     feature?:string;
     id?:string;
     location?:string;
     name?:string;
     pernight?:number;
-    perweek?:number;
     region?:string;
     riview?:number;
     website?:string,
-    img_url?:string;
-    Absolutes?:boolean
+    img_url?:Array<string>;
   }
 
 export interface FetchingCountry {
