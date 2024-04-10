@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I make this project for learn firebase integration with react.and i will try the next project on backend later.So i just wamt to know how to use firebase without backend framework like nest js and express.I also try to improve my ui with vanila css and tailwind css.
 
 ## Available Scripts
 
